@@ -19,7 +19,6 @@ body {
   color: #6e6e6e;
   font-size: 1.6rem;
   background: black;
-  overflow: hidden; /* Mengatasi scroll */
 }
 
 header,
@@ -228,4 +227,12 @@ ul {
   margin-top: -9px;
   margin-left: -187px;
   z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .muffin {
+    width: 280px;
+    margin-top: 113px;
+    margin-left: -58px;
+  }
 }
