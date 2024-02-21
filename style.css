@@ -224,10 +224,12 @@ ul {
   z-index: 2;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .muffin {
-    width: 280px;
-    margin-top: 113px;
-    margin-left: -58px;
+    width: 90%; /* Mengatur lebar gambar menjadi 90% dari lebar layar */
+    max-width: 400px; /* Membatasi lebar maksimum gambar */
+    margin: auto; /* Posisi gambar di tengah */
+    display: block;
+    margin-top: 20px; /* Mengatur jarak antara gambar dengan elemen lain */
   }
 }
