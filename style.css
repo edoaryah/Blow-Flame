@@ -220,6 +220,7 @@ ul {
 } */
 
 .muffin {
+  position: relative;
   width: 530px;
   height: auto;
   display: block;
