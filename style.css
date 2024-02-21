@@ -19,6 +19,12 @@ body {
   color: #6e6e6e;
   font-size: 1.6rem;
   background: black;
+  overflow: hidden; /* Mengatasi scroll */
+}
+
+header,
+footer {
+  display: block;
 }
 
 a,
@@ -45,7 +51,6 @@ ul {
   width: 150px;
   height: 400px;
   position: relative;
-  /* margin-top: 200px; */
 }
 
 .cake *,
@@ -61,8 +66,6 @@ ul {
   width: 150px;
   height: 300px;
 }
-
-/* ------------------------------------------ */
 
 .thread {
   filter: blur(0.3px);
@@ -126,8 +129,6 @@ ul {
   }
 }
 
-/* ----------------------------------------------- */
-
 .glow {
   filter: blur(0.5px);
   width: 26px;
@@ -174,21 +175,6 @@ ul {
   }
 }
 
-/* .flame.blow {
-  animation: flicker-blow 1s linear 0s 1 forwards;
-}
-
-@keyframes flicker-blow {
-  0% {
-    transform: scale(1) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0) rotate(45deg);
-    opacity: 0;
-  }
-} */
-
 .smoke {
   position: absolute;
   width: 50px;
@@ -203,33 +189,12 @@ ul {
   filter: blur(1.5px);
 }
 
-/* .muffin {
-  width: 280px;
-  height: auto;
-  display: block;
-  margin: auto;
-  margin-top: 113px;
-  margin-left: -58px;
-  z-index: 2;
-} */
-
 .muffin {
-  position: relative;
-  width: 530px;
-  height: auto;
-  display: block;
-  margin: auto;
-  margin-top: -9px;
-  margin-left: -187px;
-  z-index: 2;
+  max-width: 100%; /* Gambar akan menyesuaikan lebar container-nya */
+  height: auto; /* Tinggi gambar akan menyesuaikan lebarnya */
 }
 
-@media only screen and (max-width: 768px) {
-  .muffin {
-    width: 90%; /* Mengatur lebar gambar menjadi 90% dari lebar layar */
-    max-width: 400px; /* Membatasi lebar maksimum gambar */
-    margin: auto; /* Posisi gambar di tengah */
-    display: block;
-    margin-top: 20px; /* Mengatur jarak antara gambar dengan elemen lain */
-  }
+.image {
+  width: 100%; /* Atur lebar sesuai kebutuhan */
+  height: auto; /* Atur tinggi sesuai kebutuhan */
 }
