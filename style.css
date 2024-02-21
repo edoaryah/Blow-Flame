@@ -21,11 +21,6 @@ body {
   background: black;
 }
 
-header,
-footer {
-  display: block;
-}
-
 a,
 a:link,
 a:visited {
